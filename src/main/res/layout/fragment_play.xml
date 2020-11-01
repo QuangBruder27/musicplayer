@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5A5A"
+    android:id="@+id/layoutPlay">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="20dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/imgAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/default_ava"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/textview_songname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgAvatar"
+        android:layout_centerInParent="true"
+        android:text="Ten bai hat"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <!--
+    <TextView
+        android:textSize="18dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textview_songname"
+        android:id="@+id/textview_composername"
+        android:text="Ten tac gia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    -->
+
+    <ImageButton
+        android:id="@+id/imgbtnLike"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/linearlayout1"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/icon_star_selected" />
+
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:weightSum="100"
+        android:layout_above="@+id/linearlayoutButton"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16dp"
+            android:id="@+id/textview_currentPosition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="10"
+            android:text="00:00" />
+
+        <SeekBar
+            android:layout_weight="80"
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="10"
+            android:layout_toRightOf="@id/seekBar"
+            android:id="@+id/textview_duration"
+            android:text="11:11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutButton"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:id="@+id/imgbtnShuffle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_shuffle"/>
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imgbtnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_back"/>
+
+        <ImageButton
+            android:id="@+id/imgbtnPlay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pause" />
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/imgbtnNext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_next"/>
+
+        <ImageButton
+            android:id="@+id/imgbtnDisplayDialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_playlist" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

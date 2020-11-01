@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.AppCompat.RatingBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/shape"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin">
+
+
+    <LinearLayout
+        android:layout_toLeftOf="@id/lnlayout2"
+        android:id="@+id/lnlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wgsongname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten bai hat"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/wgartist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten tac gia"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/wgcurrentduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/wgcurrentduration"
+            android:id="@+id/wgtotalduration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:30"
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lnlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/imgbtnwidgetBack"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/wg_back" />
+
+        <ImageButton
+            android:id="@+id/imgbtnwidgetPlay"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/wg_play" />
+
+        <ImageButton
+            android:id="@+id/imgbtnwidgetNext"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/wg_next" />
+    </LinearLayout>
+
+
+</RelativeLayout>

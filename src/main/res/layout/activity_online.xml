@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnlineActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/layoutOnline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_marginLeft="5dp"
+        android:background="@null"
+        android:id="@+id/backbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back">
+    </ImageButton>
+
+        <ImageView
+            android:id="@+id/deezerlogo"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/deezer2"></ImageView>
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="Hello"
+            android:textColor="#695050"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_ava"></de.hdodenhof.circleimageview.CircleImageView>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/layoutOnline"
+        android:id="@+id/listViewOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

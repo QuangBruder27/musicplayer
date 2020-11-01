@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="about">Thông tin</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="add_widget">Thêm widget</string>
+    <string name="history">Lịch sử</string>
+    <string name="language">English</string>
+    <string name="playlist">Danh sách bài hát</string>
+    <string name="norepeat">Không lặp</string>
+    <string name="random">Ngẫu nhiên</string>
+    <string name="repeat1">Lặp lại bài này</string>
+    <string name="close">đóng</string>
+    <string name="Playlist">Danh sách phát</string>
+    <string name="notfound">Không có kết quả</string>
+    <string name="search">Tìm kiếm...</string>
+    <string name="scan">Quét</string>
+    <string name="no">Không</string>
+    <string name="yes">Có</string>
+    <string name="scanall">Quét lại toàn bộ</string>
+    <string name="delsong">Xóa bài hát này?</string>
+    <string name="myplaylist">Bài hát yêu thích</string>
+    <string name="listbySinger">Bài hát theo ca sĩ</string>
+    <string name="onlinemusic">Nhạc trực tuyến</string>
+    <string name="Setting">Cài đặt</string>
+    <string name="changeLang">Thay đổi ngôn ngữ</string>
+    <string name="pp">Chính sách bảo mật</string>
+</resources>

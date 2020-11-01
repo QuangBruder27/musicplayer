@@ -1,0 +1,114 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/firstLetterofSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgofSong"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:src="@drawable/default_ava" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_toLeftOf="@+id/imgbtn_star"
+            android:id="@+id/linearlayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgofSong"
+            android:orientation="vertical">
+
+            <TextView
+                android:clickable="false"
+                android:id="@+id/nameofSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten bai hat"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:clickable="false"
+                android:id="@+id/nameofArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ten tac gia"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:clickable="false"
+                    android:id="@+id/durationofSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="04:23"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:clickable="false"
+                    android:id="@+id/sizeofSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="5 Mb"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/imgbtn_star"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:foregroundGravity="right"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_star" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imgviewplaying"
+            android:layout_width="40dp"
+            android:layout_height="70dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/playing" />
+        </RelativeLayout>
+
+
+</LinearLayout>

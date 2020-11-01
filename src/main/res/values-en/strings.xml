@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="about">" About"</string>
+    <string name="add_widget">Add widget</string>
+    <string name="history">" History"</string>
+    <string name="language">Tiếng Việt</string>
+    <string name="myplaylist">" My Playlist"</string>
+    <string name="playlist">List of songs</string>
+    <string name="action_settings">Setting</string>
+    <string name="norepeat">No Repeat</string>
+    <string name="random">Random</string>
+    <string name="repeat1">Repeat this song</string>
+    <string name="close">close</string>
+    <string name="Playlist">Playlist</string>
+    <string name="notfound">No results found</string>
+    <string name="search">Search...</string>
+    <string name="scan">Scan</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="scanall">Scan all files</string>
+    <string name="delsong">Delete this song?</string>
+    <string name="listbySinger">Playlist sort by Singer</string>
+    <string name="onlinemusic">Online Music</string>
+    <string name="Setting">Setting</string>
+    <string name="changeLang">Change language</string>
+    <string name="pp">Privacy policy</string>
+</resources>

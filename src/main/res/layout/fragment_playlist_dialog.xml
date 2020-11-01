@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/playlistDialogFragment"
+    tools:context=".Fragments.PlaylistDialogFragment">
+
+    <TextView
+        android:id="@+id/tvPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Playlist"
+        android:textSize="22sp"
+        android:textStyle="bold"></TextView>
+
+    <ListView
+        android:layout_above="@+id/btnClose"
+        android:layout_below="@id/tvPlaylist"
+        android:id="@+id/listViewPlaylistDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_alignParentBottom="true"
+        android:text= "@string/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+
+
+</RelativeLayout>
